@@ -15,12 +15,30 @@ body {
 
 .title {
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
   font-size: 24px;
   color: #4B4644;
   line-height: 32px;
   padding-left: 80px;
   text-decoration: none;
   float: left;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  color: #4B4644;
+  line-height: 32px;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: -.025em;
+  color: #4B4644;
+  line-height: 32px;
+  -webkit-font-smoothing: antialiased;
 }
 
 li a {
