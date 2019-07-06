@@ -9,8 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400itallic" rel="stylesheet">
-        <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -18,33 +17,47 @@
     <body>
 
     <nav class="topnav">
-      <div class="title">
+      <div class="wordmark">
         The Great Books<br>of the Western World
       </div>
       <ul>
         <li>
-          <a>About</a>
+          <a href="">About</a>
         </li>
       </ul>
     </nav>
 
     <div class="masthead">
-      <img src="img/masthead.svg"/>
+      <img src="img/masthead.svg" alt="The Great Books"/>
     </div>
 
-    <article>
-      <h3>The Great Introduction</h3>
-      <p>
-        Cras convallis enim vitae lorem intm lobortis. Duis malesuada euid les. Praesent consectetur massa odio, in consectetur mauris rhoncus at. Suspendisse io eget uricies.
-      </p>
-    </article>
+    <div class="container">
+      <article id="intro">
+        <h3>The Great Introduction</h3>
+        <p>
+          Cras convallis enim vitae lorem intm lobortis. Duis malesuada euid les. Praesent consectetur massa odio, in consectetur mauris rhoncus at. Suspendisse io eget uricies.
+        </p>
+      </article>
 
-    <article>
-      <h3> The Volumes</h3>
-      <p>
-        Cras convallis enim vitae lorem intm lobortis. Duis malesuada euid les. Praesent consectetur massa odio, in consectetur mauris rhoncus at. Suspendisse io eget uricies.
-      </p>
-    </article>
+      <article id="volumes">
+        <h3> The Volumes</h3>
+          <div class="volume">
+              <p class="label">Volume 1</p>
+              <a class="title" href="">The Great Conversation</a>
+          </div>
+          <div class="volume">
+              <p class="label">Volume 2</p>
+              <a class="title" href="">Syntopicon I</a>
+          </div>
+          <div class="volume">
+              <p class="label">Volume 3</p>
+              <a class="title" href="">Syntopicon II</a>
+          </div>
+      </article>
+    </div>
 
+      <footer>
+
+      </footer>
     </body>
 </html>

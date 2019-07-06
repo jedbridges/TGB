@@ -13,7 +13,7 @@ body {
   display: inlineblock;
 }
 
-.title {
+.wordmark {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 24px;
@@ -24,20 +24,60 @@ body {
   float: left;
 }
 
+/* Index */
+
+.container {
+  Display:flex;
+  Flex-direction:horizontal;
+  margin-left: 88px;
+  margin-right: 88px;
+}
+
+article {
+  width: 464px;
+}
+
+#intro {
+  padding-right: 96px;
+}
+
+.volume {
+  padding-bottom: 16px
+}
+
+/* Typography */
+
 p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   color: #4B4644;
   line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #4B4644;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 0px;
+  padding-top: 14px;
 }
 
 h3 {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 32px;
-  letter-spacing: -.025em;
+  letter-spacing: -.017em;
   color: #4B4644;
   line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  text-decoration: none;
+  list-style-type:none
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,9 +88,18 @@ li a {
   text-align: right;
   line-height: 32px;
   padding-right: 80px;
-  text-align: center;
   text-decoration: none;
   float: right;
+  -webkit-font-smoothing: antialiased;
+}
+
+a.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-style: normal;
+  color: #FF4C00;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
 }
 
 ul {
@@ -60,4 +109,8 @@ ul {
 .masthead {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+footer {
+  height: 120px;
 }
