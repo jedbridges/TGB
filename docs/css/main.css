@@ -8,9 +8,9 @@ body {
   background-color: #F2E8E4;
 }
 
-.topnav {
-  overflow: hidden;
-  display: inlineblock;
+.masthead {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .wordmark {
@@ -24,13 +24,30 @@ body {
   float: left;
 }
 
+@media (max-width: 1279px) {
+  .wordmark {
+
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  display: inlineblock;
+}
+
 /* Index */
 
 .container {
   Display:flex;
-  Flex-direction:horizontal;
-  margin-left: 88px;
+  Flex-direction:row;
+  margin-left: 80px;
   margin-right: 88px;
+}
+
+@media (max-width: 991px) {
+  .container {
+   flex-direction: column;
+  }
 }
 
 article {
@@ -104,11 +121,6 @@ a.title {
 
 ul {
   list-style-type: none;
-}
-
-.masthead {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 footer {
