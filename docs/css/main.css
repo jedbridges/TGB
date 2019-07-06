@@ -11,6 +11,10 @@ body {
 .masthead {
   padding-top: 120px;
   padding-bottom: 120px;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: 1104px 384px;
 }
 
 .wordmark {
@@ -22,12 +26,6 @@ body {
   padding-left: 80px;
   text-decoration: none;
   float: left;
-}
-
-@media (max-width: 1279px) {
-  .wordmark {
-
-  }
 }
 
 .topnav {
@@ -108,6 +106,28 @@ li a {
   text-decoration: none;
   float: right;
   -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --mainColor: #f3d5c9;
+}
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
 }
 
 a.title {
