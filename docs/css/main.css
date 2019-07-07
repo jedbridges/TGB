@@ -28,7 +28,7 @@ body {
   .masthead {
     display: block;
     height: auto;
-    width: 80%;
+    width: 88%;
     padding-top: 64px;
     padding-bottom: 48px;
     padding-left: 48px;
@@ -73,7 +73,7 @@ article {
 
 @media (max-width: 991px) {
   article {
-   width: 320px;
+   width: 100%;
   }
 }
 
