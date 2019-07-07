@@ -9,12 +9,11 @@ body {
 }
 
 .masthead {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: block;
-  width: 100%;
   height: auto;
-  background-size: 1104px 384px;
+  width: 88%;
+  padding-top: 120px;
+  padding-bottom: 108px;
 }
 
 .wordmark {
