@@ -8,12 +8,31 @@ body {
   background-color: #F2E8E4;
 }
 
+@media (max-width: 991px) {
+  html {
+    margin-top: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .masthead {
   display: block;
   height: auto;
   width: 88%;
   padding-top: 120px;
   padding-bottom: 108px;
+}
+
+@media (max-width: 991px) {
+  .masthead {
+    display: block;
+    height: auto;
+    width: 80%;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    padding-left: 48px;
+  }
 }
 
 .wordmark {
@@ -43,12 +62,19 @@ body {
 
 @media (max-width: 991px) {
   .container {
+   Display:flex;
    flex-direction: column;
   }
 }
 
 article {
   width: 464px;
+}
+
+@media (max-width: 991px) {
+  article {
+   width: 320px;
+  }
 }
 
 #intro {
