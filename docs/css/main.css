@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+body.fadeIn {
+    animation-duration: 1.4s;
+}
+
 @media (max-width: 991px) {
   html {
     margin-top: 32px;
