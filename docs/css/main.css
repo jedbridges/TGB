@@ -2,10 +2,14 @@ html {
   margin-top: 48px;
   margin-left: 88px;
   margin-right: 88px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #F2E8E4;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 991px) {
