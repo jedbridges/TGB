@@ -29,9 +29,20 @@ body {
     display: block;
     height: auto;
     width: 88%;
+    padding-top: 80px;
+    padding-bottom: 56px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 660px) {
+  .masthead {
+    display: block;
+    height: auto;
+    width: 90%;
     padding-top: 64px;
-    padding-bottom: 48px;
-    padding-left: 48px;
+    padding-bottom: 32px;
+    padding-left: 16px;
   }
 }
 
@@ -44,6 +55,19 @@ body {
   padding-left: 80px;
   text-decoration: none;
   float: left;
+}
+
+@media (max-width: 660px) {
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #4B4644;
+    line-height: 32px;
+    padding-left: 32px;
+    text-decoration: none;
+    float: left;
+  }
 }
 
 .topnav {
@@ -64,6 +88,17 @@ body {
   .container {
    Display:flex;
    flex-direction: column;
+   margin-left: 80px;
+   margin-right: 88px;
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+   Display:flex;
+   flex-direction: column;
+   margin-left: 32px;
+   margin-right: 32px;
   }
 }
 
@@ -127,7 +162,6 @@ li a {
   color: #FF4C00;
   text-align: right;
   line-height: 32px;
-  padding-right: 80px;
   text-decoration: none;
   float: right;
   -webkit-font-smoothing: antialiased;
@@ -166,6 +200,10 @@ a.title {
 
 ul {
   list-style-type: none;
+}
+
+.navitem {
+  padding-right: 80px;
 }
 
 footer {
