@@ -223,6 +223,12 @@ ul {
   margin-right:80px
 }
 
+@media (max-width: 660px) {
+  .navitem {
+    margin-right:40px
+  }
+}
+
 footer {
   height: 120px;
 }
