@@ -66,6 +66,12 @@ body.fadeIn {
   -webkit-font-smoothing: antialiased;
 }
 
+.wordmark:hover {
+  color: #FF4C00;
+  transition: .35s;
+}
+
+
 @media (max-width: 660px) {
   .wordmark {
     font-family: 'Cormorant Garamond', serif;
