@@ -6,14 +6,27 @@
         <title>The Great Books of the Western World</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400itallic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="plugins.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+        <script src="https://unpkg.com/stein-js-client"></script>
+        <script>
+          const store = new SteinStore(
+            "https://api.steinhq.com/v1/storages/5d2ad5bf490adc53ef5c2a7c"
+          );
+
+          store.read("Tgb", { limit: 1, offset: 2 }).then(data => {
+            console.log(data);
+          });
+
+          // Logs ↓ (trimmed for brevity)
+      
     </head>
 
     <body class="animated fadeIn">
@@ -55,6 +68,7 @@
           </div>
       </article>
     </div>
+
 
       <footer>
 
