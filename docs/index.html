@@ -11,22 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="plugins.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
-        <script src="https://unpkg.com/stein-js-client"></script>
-        <script>
-          const store = new SteinStore(
-            "https://api.steinhq.com/v1/storages/5d2ad5bf490adc53ef5c2a7c"
-          );
-
-          store.read("Tgb", { limit: 1, offset: 2 }).then(data => {
-            console.log(data);
-          });
-
-      </script>
-
     </head>
 
     <body class="animated fadeIn">
@@ -54,24 +40,23 @@
 
       <article id="volumes">
         <h3>The Volumes</h3>
+          <div data-stein-url="https://api.steinhq.com/v1/storages/5d2ad5bf490adc53ef5c2a7c/Sheet"
+           data-stein-limit="400"
+           >
           <div class="volume">
-              <p class="label">Volume 1</p>
-              <a class="title" href="">The Great Conversation</a>
+            <p class="label">{{volume}}</p>
+            <a class="title" href="{{link}}" target="_blank">{{title}}</a>
+            <p class="author">By {{author}}<p>
           </div>
-          <div class="volume">
-              <p class="label">Volume 2</p>
-              <a class="title" href="">Syntopicon I</a>
-          </div>
-          <div class="volume">
-              <p class="label">Volume 3</p>
-              <a class="title" href="">Syntopicon II</a>
-          </div>
+        </div>
       </article>
-    </div>
 
 
-      <footer>
+    <footer>
 
-      </footer>
+    </footer>
+
+      <script src="https://unpkg.com/stein-expedite@0.0.1/dist/index.js"></script>
+
     </body>
 </html>
