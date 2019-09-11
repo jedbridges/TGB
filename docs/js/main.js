@@ -3,3 +3,10 @@ window.scroll({
   left: 0,
   behavior: 'smooth'
 });
+
+$(document).on('scroll', function() {
+  var scroll_top = $(this).scrollTop();
+  if (scroll_top > 50) {
+    $('.toplink').addClass('show');
+  }
+});
