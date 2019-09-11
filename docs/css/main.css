@@ -4,6 +4,7 @@ html {
   margin-right: 88px;
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -109,6 +110,13 @@ body.fadeIn {
   }
 }
 
+@media (max-width: 1080px) {
+  .toplink {
+    display: none;
+  }
+}
+
+
 @media (max-width: 660px) {
   .container {
    Display:flex;
@@ -164,8 +172,6 @@ p.author {
   color: #4B4644;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  line-height: 0px;
-  padding-top: 12px;
 }
 
 h3 {
@@ -174,7 +180,7 @@ h3 {
   font-size: 32px;
   letter-spacing: -.017em;
   color: #4B4644;
-  line-height: 32px;
+  line-height: 40px;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
 }
@@ -223,7 +229,7 @@ a.title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 48px;
   font-style: normal;
-  line-height: 1em;
+  line-height: 1.4em;
   color: #FF4C00;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
@@ -243,7 +249,32 @@ ul {
   }
 }
 
+.toplink {
+  position: fixed;
+  bottom: 0;
+  right: 10em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #4B4644;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  line-height: 0px;
+  padding: 48px;
+  transition: all 0.2s;
+}
+
+a.toplink:hover {
+  background: 0;
+  background-size: 0;
+  color: #FF4C00;
+  transition: all 0.2s;
+  text-decoration: none;
+  background-position: 0;
+  background-repeat: none;
+}
 
 footer {
   height: 120px;
+  position: relative;
 }
