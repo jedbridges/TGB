@@ -176,6 +176,7 @@ h3 {
   color: #4B4644;
   line-height: 32px;
   -webkit-font-smoothing: antialiased;
+  font-weight: normal;
 }
 
 li {
@@ -241,7 +242,6 @@ ul {
     margin-right:40px
   }
 }
-
 
 
 footer {
